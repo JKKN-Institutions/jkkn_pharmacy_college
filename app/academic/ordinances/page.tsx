@@ -404,56 +404,6 @@ export default function OrdinancesPage() {
         </div>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-[#0F6B3E] text-white mt-auto">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-16">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
-            {/* Column 1 - JKKN College of Pharmacy */}
-            <div>
-              <h3 className="text-lg lg:text-xl font-bold mb-4 lg:mb-6 border-b-2 border-white pb-2 inline-block">
-                JKKN COLLEGE OF PHARMACY
-              </h3>
-              <div className="mt-6">
-                <a
-                  href="#"
-                  className="text-white hover:text-gray-200 transition-colors text-sm lg:text-base"
-                >
-                  View larger map
-                </a>
-              </div>
-            </div>
-
-            {/* Column 2 - Our Institutions */}
-            <div>
-              <h3 className="text-lg lg:text-xl font-bold mb-4 lg:mb-6 border-b-2 border-white pb-2 inline-block">
-                OUR INSTITUTIONS
-              </h3>
-              <ul className="space-y-2 mt-6">
-                <li>
-                  <a
-                    href="#"
-                    className="text-white hover:text-gray-200 transition-colors text-sm lg:text-base block"
-                  >
-                    JKKN Dental College and Hospital
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            {/* Column 3 - Contact Us */}
-            <div>
-              <h3 className="text-lg lg:text-xl font-bold mb-4 lg:mb-6 border-b-2 border-white pb-2 inline-block">
-                CONTACT US
-              </h3>
-              <div className="mt-6 space-y-2">
-                <p className="text-white text-sm lg:text-base">
-                  <strong>Call:</strong> +919345855001
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }

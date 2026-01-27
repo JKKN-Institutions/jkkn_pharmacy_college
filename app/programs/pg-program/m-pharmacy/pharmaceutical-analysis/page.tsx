@@ -1,38 +1,12 @@
 'use client'
 
 import Header from '@/components/Header'
-import Link from 'next/link'
-import { ChevronRight, GraduationCap, Target, BookOpen, TrendingUp, Users, Building2 } from 'lucide-react'
+import { GraduationCap, Target, BookOpen, TrendingUp, Users, Building2 } from 'lucide-react'
 
 export default function PharmaceuticalAnalysisPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
-
-      {/* Breadcrumb */}
-      <div className="bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <nav className="flex items-center text-sm text-gray-600">
-            <Link href="/" className="hover:text-blue-600 transition-colors">
-              Home
-            </Link>
-            <ChevronRight className="w-4 h-4 mx-2" />
-            <Link href="/programs" className="hover:text-blue-600 transition-colors">
-              Programs
-            </Link>
-            <ChevronRight className="w-4 h-4 mx-2" />
-            <Link href="/programs/pg-program" className="hover:text-blue-600 transition-colors">
-              PG Program
-            </Link>
-            <ChevronRight className="w-4 h-4 mx-2" />
-            <Link href="/programs/pg-program/m-pharmacy" className="hover:text-blue-600 transition-colors">
-              M.Pharmacy
-            </Link>
-            <ChevronRight className="w-4 h-4 mx-2" />
-            <span className="text-gray-900 font-medium">Pharmaceutical Analysis</span>
-          </nav>
-        </div>
-      </div>
 
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-[#5B7FE5] to-[#8B6FD8] text-white">

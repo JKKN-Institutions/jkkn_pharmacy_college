@@ -1,34 +1,11 @@
 'use client'
 
-import Link from 'next/link'
-import { ChevronRight } from 'lucide-react'
 import Header from '@/components/Header'
 
 export default function PharmacyPracticePage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
-
-      {/* Breadcrumb */}
-      <div className="bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <nav className="flex items-center text-sm text-gray-600">
-            <Link href="/" className="hover:text-[#6B9E4E] transition-colors">
-              Home
-            </Link>
-            <ChevronRight className="w-4 h-4 mx-2" />
-            <Link href="/programs" className="hover:text-[#6B9E4E] transition-colors">
-              Programs
-            </Link>
-            <ChevronRight className="w-4 h-4 mx-2" />
-            <Link href="/programs/pg-program/m-pharmacy" className="hover:text-[#6B9E4E] transition-colors">
-              M.Pharmacy
-            </Link>
-            <ChevronRight className="w-4 h-4 mx-2" />
-            <span className="text-gray-900 font-medium">Pharmacy Practice</span>
-          </nav>
-        </div>
-      </div>
 
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-[#00BFFF] to-[#00D4FF] text-white py-16 px-4 sm:px-6 lg:px-8">

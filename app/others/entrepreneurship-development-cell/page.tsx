@@ -1,30 +1,11 @@
 'use client'
 
-import Link from 'next/link'
-import { ChevronRight } from 'lucide-react'
 import Header from '@/components/Header'
 
 export default function EntrepreneurshipDevelopmentCellPage() {
   return (
     <div className="min-h-screen bg-[#F5F1E8]">
       <Header />
-
-      {/* Breadcrumb */}
-      <div className="bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <nav className="flex items-center text-sm text-gray-600">
-            <Link href="/" className="hover:text-[#6B9E4E] transition-colors">
-              Home
-            </Link>
-            <ChevronRight className="w-4 h-4 mx-2" />
-            <Link href="/others" className="hover:text-[#6B9E4E] transition-colors">
-              Others
-            </Link>
-            <ChevronRight className="w-4 h-4 mx-2" />
-            <span className="text-gray-900 font-medium">Entrepreneurship Development Cell</span>
-          </nav>
-        </div>
-      </div>
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
@@ -174,90 +155,6 @@ export default function EntrepreneurshipDevelopmentCellPage() {
         </div>
       </div>
 
-      {/* Footer */}
-      <footer className="bg-[#0F6B3E] text-white mt-12 md:mt-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-            {/* JKKN College of Pharmacy */}
-            <div>
-              <h3 className="text-lg md:text-xl font-bold mb-4 md:mb-6">
-                JKKN COLLEGE OF PHARMACY
-              </h3>
-              <div className="border-b-2 border-white w-16 mb-4 md:mb-6"></div>
-              <div className="bg-gray-200 h-40 md:h-48 rounded overflow-hidden">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.0123456789!2d77.5123456!3d11.0123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDAwJzQ0LjQiTiA3N8KwMzAnNDQuNCJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="JKKN College of Pharmacy Location"
-                ></iframe>
-              </div>
-              <Link
-                href="#"
-                className="inline-block mt-3 md:mt-4 text-sm text-white hover:underline"
-              >
-                View larger map
-              </Link>
-            </div>
-
-            {/* Our Institutions */}
-            <div>
-              <h3 className="text-lg md:text-xl font-bold mb-4 md:mb-6">
-                OUR INSTITUTIONS
-              </h3>
-              <div className="border-b-2 border-white w-16 mb-4 md:mb-6"></div>
-              <ul className="space-y-2 md:space-y-3">
-                <li>
-                  <Link
-                    href="https://jkkndental.ac.in"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm md:text-base hover:underline block"
-                  >
-                    JKKN Dental College and Hospital
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="https://jkknallied.ac.in"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm md:text-base hover:underline block"
-                  >
-                    JKKN College of Allied Health Science
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* Contact Us */}
-            <div>
-              <h3 className="text-lg md:text-xl font-bold mb-4 md:mb-6">
-                CONTACT US
-              </h3>
-              <div className="border-b-2 border-white w-16 mb-4 md:mb-6"></div>
-              <div className="space-y-3 md:space-y-4">
-                <p className="text-sm md:text-base">
-                  <strong>Call:</strong>{' '}
-                  <a href="tel:+919345855001" className="hover:underline">
-                    +919345855001
-                  </a>
-                </p>
-                <p className="text-sm md:text-base">
-                  <strong>Email:</strong>{' '}
-                  <a href="mailto:pharmacy@jkkn.ac.in" className="hover:underline">
-                    pharmacy@jkkn.ac.in
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }

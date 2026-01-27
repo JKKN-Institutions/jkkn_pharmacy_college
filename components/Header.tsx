@@ -27,27 +27,20 @@ export default function Header() {
   }, [])
 
   return (
-    <header className="bg-white shadow-[0_2px_4px_rgba(0,0,0,0.1)] sticky top-0 z-[1000]">
+    <header className="bg-[#f5f0e8] shadow-[0_2px_4px_rgba(0,0,0,0.1)] sticky top-0 z-[1000]">
       <div className="max-w-[1600px] mx-auto px-5">
         <div className="grid grid-cols-[auto_1fr_auto] items-center gap-5">
           {/* Logo Section */}
-          <div className="flex items-center gap-2.5 py-2.5">
+          <div className="flex flex-col items-start py-2.5">
             <Image
               src="/images/logo.png"
-              alt="JKKN College of Pharmacy Logo"
-              width={70}
-              height={34}
-              className="object-contain"
+              alt="JKKN Logo"
+              width={180}
+              height={80}
+              className="object-contain mb-1"
               priority
             />
-            <div className="flex flex-col">
-              <span className="text-[34px] font-bold text-[#1a7f5a] tracking-[3px] leading-none">
-                JKKN
-              </span>
-              <span className="text-xs text-[#d4145a] font-medium mt-0.5">
-                College of Pharmacy
-              </span>
-            </div>
+            
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -63,32 +56,31 @@ export default function Header() {
 
           {/* Navigation */}
           <nav
-            className={`flex flex-col justify-self-center max-lg:fixed max-lg:top-0 max-lg:bg-white max-lg:shadow-[-2px_0_10px_rgba(0,0,0,0.1)] max-lg:pt-20 max-lg:px-5 max-lg:pb-5 max-lg:overflow-y-auto max-lg:z-[999] max-lg:w-[300px] max-lg:h-screen transition-all duration-300 ${
+            className={`flex flex-col justify-self-center max-lg:fixed max-lg:top-0 max-lg:bg-[#f5f0e8] max-lg:shadow-[-2px_0_10px_rgba(0,0,0,0.1)] max-lg:pt-20 max-lg:px-5 max-lg:pb-5 max-lg:overflow-y-auto max-lg:z-[999] max-lg:w-[300px] max-lg:h-screen transition-all duration-300 ${
               mobileMenuOpen ? 'max-lg:right-0' : 'max-lg:-right-full'
             }`}
           >
             {/* First Row */}
-            <ul className="flex list-none justify-center flex-wrap max-lg:flex-col max-lg:mb-5">
+            <ul className="flex list-none justify-start flex-wrap max-lg:flex-col max-lg:mb-5">
               <li>
                 <a
                   href="/"
-                  className="text-black no-underline text-[13px] font-bold py-2.5 px-3.5 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-2.5 max-xl:text-[11px] max-xl:px-2 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm max-lg:border-b max-lg:border-[#f0f0f0]"
+                  className="text-black no-underline text-[13px] font-bold py-2.5 px-6 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-4 max-xl:text-[11px] max-xl:px-3 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm max-lg:border-b max-lg:border-[#f0f0f0]"
                 >
                   HOME
                 </a>
               </li>
               <li
-                className="relative flex items-center gap-1 max-lg:w-full max-lg:border-b max-lg:border-[#f0f0f0]"
+                className="relative flex items-center max-lg:w-full max-lg:border-b max-lg:border-[#f0f0f0]"
                 onMouseEnter={() => setAboutDropdownOpen(true)}
                 onMouseLeave={() => setAboutDropdownOpen(false)}
               >
-                <a
-                  href="/about"
-                  className="text-black no-underline text-[13px] font-bold py-2.5 px-3.5 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-2.5 max-xl:text-[11px] max-xl:px-2 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm"
+                <span
+                  className="text-black no-underline text-[13px] font-bold py-2.5 px-6 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-4 max-xl:text-[11px] max-xl:px-3 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm cursor-default"
                 >
                   ABOUT
-                </a>
-                <span className="text-[8px] text-black pointer-events-none max-lg:ml-auto max-lg:mr-2.5">▼</span>
+                </span>
+                <span className="text-[10px] text-black pointer-events-none -ml-2 max-lg:ml-auto max-lg:mr-2.5">˅</span>
 
                 {/* About Dropdown */}
                 {mounted && aboutDropdownOpen && (
@@ -137,10 +129,10 @@ export default function Header() {
                       onMouseEnter={() => setAffiliationSubmenuOpen(true)}
                       onMouseLeave={() => setAffiliationSubmenuOpen(false)}
                     >
-                      <a href="/about/affiliation-details" className="flex items-center justify-between px-6 py-2.5 text-[#666666] text-[15px] font-medium hover:bg-[#e8dcc8] transition-colors whitespace-nowrap">
+                      <span className="flex items-center justify-between px-6 py-2.5 text-[#666666] text-[15px] font-medium hover:bg-[#e8dcc8] transition-colors whitespace-nowrap cursor-default">
                         <span>Affiliation Details</span>
                         <span className="text-xs">›</span>
-                      </a>
+                      </span>
                       {mounted && affiliationSubmenuOpen && (
                         <div className="absolute left-full top-0 bg-[#f5f0e8] shadow-lg min-w-[320px] py-2 z-[9999]">
                           <a href="/about/affiliation-details/aicte" className="block px-6 py-2.5 text-[#666666] text-[15px] font-medium hover:bg-[#e8dcc8] transition-colors">
@@ -163,10 +155,10 @@ export default function Header() {
                       onMouseEnter={() => setStrategicPlanSubmenuOpen(true)}
                       onMouseLeave={() => setStrategicPlanSubmenuOpen(false)}
                     >
-                      <a href="/about/institutional-strategic-plan" className="flex items-center justify-between px-6 py-2.5 text-[#666666] text-[15px] font-medium hover:bg-[#e8dcc8] transition-colors whitespace-nowrap">
+                      <span className="flex items-center justify-between px-6 py-2.5 text-[#666666] text-[15px] font-medium hover:bg-[#e8dcc8] transition-colors whitespace-nowrap cursor-default">
                         <span>Institutional Strategic Plan</span>
                         <span className="text-xs">›</span>
-                      </a>
+                      </span>
                       {mounted && strategicPlanSubmenuOpen && (
                         <div className="absolute left-full top-0 bg-[#f5f0e8] shadow-lg min-w-[380px] py-2 z-[9999]">
                           <a href="/about/institutional-strategic-plan/edc" className="block px-6 py-2.5 text-[#666666] text-[15px] font-medium hover:bg-[#e8dcc8] transition-colors">
@@ -194,17 +186,16 @@ export default function Header() {
                 )}
               </li>
               <li
-                className="relative flex items-center gap-1 max-lg:w-full max-lg:border-b max-lg:border-[#f0f0f0]"
+                className="relative flex items-center max-lg:w-full max-lg:border-b max-lg:border-[#f0f0f0]"
                 onMouseEnter={() => setProgramsDropdownOpen(true)}
                 onMouseLeave={() => setProgramsDropdownOpen(false)}
               >
-                <a
-                  href="/programs"
-                  className="text-black no-underline text-[13px] font-bold py-2.5 px-3.5 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-2.5 max-xl:text-[11px] max-xl:px-2 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm"
+                <span
+                  className="text-black no-underline text-[13px] font-bold py-2.5 px-6 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-4 max-xl:text-[11px] max-xl:px-3 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm cursor-default"
                 >
                   PROGRAMS OFFERED
-                </a>
-                <span className="text-[8px] text-black pointer-events-none max-lg:ml-auto max-lg:mr-2.5">▼</span>
+                </span>
+                <span className="text-[10px] text-black pointer-events-none -ml-2 max-lg:ml-auto max-lg:mr-2.5">˅</span>
 
                 {/* Programs Offered Dropdown */}
                 {mounted && programsDropdownOpen && (
@@ -214,10 +205,10 @@ export default function Header() {
                       onMouseEnter={() => setUgProgramSubmenuOpen(true)}
                       onMouseLeave={() => setUgProgramSubmenuOpen(false)}
                     >
-                      <a href="/programs/ug-program" className="flex items-center justify-between px-6 py-2.5 text-[#666666] text-[15px] font-medium hover:bg-[#e8dcc8] transition-colors whitespace-nowrap">
+                      <span className="flex items-center justify-between px-6 py-2.5 text-[#666666] text-[15px] font-medium hover:bg-[#e8dcc8] transition-colors whitespace-nowrap cursor-default">
                         <span>UG Program</span>
                         <span className="text-xs">›</span>
-                      </a>
+                      </span>
                       {mounted && ugProgramSubmenuOpen && (
                         <div className="absolute left-full top-0 bg-[#f5f0e8] shadow-lg min-w-[280px] py-2 z-[9999]">
                           <a href="/programs/ug-program/b-pharmacy" className="block px-6 py-2.5 text-[#666666] text-[15px] font-medium hover:bg-[#e8dcc8] transition-colors">
@@ -234,10 +225,10 @@ export default function Header() {
                       onMouseEnter={() => setPgProgramSubmenuOpen(true)}
                       onMouseLeave={() => setPgProgramSubmenuOpen(false)}
                     >
-                      <a href="/programs/pg-program" className="flex items-center justify-between px-6 py-2.5 text-[#666666] text-[15px] font-medium hover:bg-[#e8dcc8] transition-colors whitespace-nowrap">
+                      <span className="flex items-center justify-between px-6 py-2.5 text-[#666666] text-[15px] font-medium hover:bg-[#e8dcc8] transition-colors whitespace-nowrap cursor-default">
                         <span>PG Program</span>
                         <span className="text-xs">›</span>
-                      </a>
+                      </span>
                       {mounted && pgProgramSubmenuOpen && (
                         <div className="absolute left-full top-0 bg-[#f5f0e8] shadow-lg min-w-[320px] py-2 z-[9999]">
                           <div
@@ -284,27 +275,25 @@ export default function Header() {
                   </div>
                 )}
               </li>
-              <li className="flex items-center gap-1 max-lg:w-full max-lg:border-b max-lg:border-[#f0f0f0]">
-                <a
-                  href="/departments"
-                  className="text-black no-underline text-[13px] font-bold py-2.5 px-3.5 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-2.5 max-xl:text-[11px] max-xl:px-2 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm"
+              <li className="flex items-center max-lg:w-full max-lg:border-b max-lg:border-[#f0f0f0]">
+                <span
+                  className="text-black no-underline text-[13px] font-bold py-2.5 px-6 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-4 max-xl:text-[11px] max-xl:px-3 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm cursor-default"
                 >
                   DEPARTMENTS
-                </a>
-                <span className="text-[8px] text-black pointer-events-none max-lg:ml-auto max-lg:mr-2.5">▼</span>
+                </span>
+                <span className="text-[10px] text-black pointer-events-none -ml-2 max-lg:ml-auto max-lg:mr-2.5">˅</span>
               </li>
               <li
-                className="relative flex items-center gap-1 max-lg:w-full max-lg:border-b max-lg:border-[#f0f0f0]"
+                className="relative flex items-center max-lg:w-full max-lg:border-b max-lg:border-[#f0f0f0]"
                 onMouseEnter={() => setAcademicDropdownOpen(true)}
                 onMouseLeave={() => setAcademicDropdownOpen(false)}
               >
-                <a
-                  href="/academic"
-                  className="text-black no-underline text-[13px] font-bold py-2.5 px-3.5 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-2.5 max-xl:text-[11px] max-xl:px-2 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm"
+                <span
+                  className="text-black no-underline text-[13px] font-bold py-2.5 px-6 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-4 max-xl:text-[11px] max-xl:px-3 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm cursor-default"
                 >
                   ACADEMIC
-                </a>
-                <span className="text-[8px] text-black pointer-events-none max-lg:ml-auto max-lg:mr-2.5">▼</span>
+                </span>
+                <span className="text-[10px] text-black pointer-events-none -ml-2 max-lg:ml-auto max-lg:mr-2.5">˅</span>
 
                 {/* Academic Dropdown */}
                 {mounted && academicDropdownOpen && (
@@ -320,10 +309,10 @@ export default function Header() {
                       onMouseEnter={() => setTimeTableSubmenuOpen(true)}
                       onMouseLeave={() => setTimeTableSubmenuOpen(false)}
                     >
-                      <a href="/academic/time-table" className="flex items-center justify-between px-6 py-2.5 text-[#666666] text-[15px] font-medium hover:bg-[#e8dcc8] transition-colors whitespace-nowrap">
+                      <span className="flex items-center justify-between px-6 py-2.5 text-[#666666] text-[15px] font-medium hover:bg-[#e8dcc8] transition-colors whitespace-nowrap cursor-default">
                         <span>Time Table</span>
                         <span className="text-xs">›</span>
-                      </a>
+                      </span>
                       {mounted && timeTableSubmenuOpen && (
                         <div className="absolute left-full top-0 bg-[#f5f0e8] shadow-lg min-w-[280px] py-2 z-[9999]">
                           <a href="/academic/time-table/bpharm" className="block px-6 py-2.5 text-[#666666] text-[15px] font-medium hover:bg-[#e8dcc8] transition-colors">
@@ -349,10 +338,10 @@ export default function Header() {
                       onMouseEnter={() => setCosPosSubmenuOpen(true)}
                       onMouseLeave={() => setCosPosSubmenuOpen(false)}
                     >
-                      <a href="/academic/cos-pos" className="flex items-center justify-between px-6 py-2.5 text-[#666666] text-[15px] font-medium hover:bg-[#e8dcc8] transition-colors whitespace-nowrap">
+                      <span className="flex items-center justify-between px-6 py-2.5 text-[#666666] text-[15px] font-medium hover:bg-[#e8dcc8] transition-colors whitespace-nowrap cursor-default">
                         <span>COs _ POs</span>
                         <span className="text-xs">›</span>
-                      </a>
+                      </span>
                       {mounted && cosPosSubmenuOpen && (
                         <div className="absolute left-full top-0 bg-[#f5f0e8] shadow-lg min-w-[200px] py-2 z-[9999]">
                           <a href="/academic/cos-pos/bpharm" className="block px-6 py-2.5 text-[#666666] text-[15px] font-medium hover:bg-[#e8dcc8] transition-colors">
@@ -383,17 +372,16 @@ export default function Header() {
                 )}
               </li>
               <li
-                className="relative flex items-center gap-1 max-lg:w-full max-lg:border-b max-lg:border-[#f0f0f0]"
+                className="relative flex items-center max-lg:w-full max-lg:border-b max-lg:border-[#f0f0f0]"
                 onMouseEnter={() => setFacilitiesDropdownOpen(true)}
                 onMouseLeave={() => setFacilitiesDropdownOpen(false)}
               >
-                <a
-                  href="/facilities"
-                  className="text-black no-underline text-[13px] font-bold py-2.5 px-3.5 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-2.5 max-xl:text-[11px] max-xl:px-2 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm"
+                <span
+                  className="text-black no-underline text-[13px] font-bold py-2.5 px-6 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-4 max-xl:text-[11px] max-xl:px-3 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm cursor-default"
                 >
                   FACILITIES
-                </a>
-                <span className="text-[8px] text-black pointer-events-none max-lg:ml-auto max-lg:mr-2.5">▼</span>
+                </span>
+                <span className="text-[10px] text-black pointer-events-none -ml-2 max-lg:ml-auto max-lg:mr-2.5">˅</span>
 
                 {/* Facilities Dropdown */}
                 {mounted && facilitiesDropdownOpen && (
@@ -455,7 +443,7 @@ export default function Header() {
               <li className="max-lg:border-b max-lg:border-[#f0f0f0]">
                 <a
                   href="/nacc"
-                  className="text-black no-underline text-[13px] font-bold py-2.5 px-3.5 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-2.5 max-xl:text-[11px] max-xl:px-2 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm"
+                  className="text-black no-underline text-[13px] font-bold py-2.5 px-6 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-4 max-xl:text-[11px] max-xl:px-3 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm"
                 >
                   NACC
                 </a>
@@ -463,7 +451,7 @@ export default function Header() {
               <li className="max-lg:border-b max-lg:border-[#f0f0f0]">
                 <a
                   href="/iqac"
-                  className="text-black no-underline text-[13px] font-bold py-2.5 px-3.5 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-2.5 max-xl:text-[11px] max-xl:px-2 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm"
+                  className="text-black no-underline text-[13px] font-bold py-2.5 px-6 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-4 max-xl:text-[11px] max-xl:px-3 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm"
                 >
                   IQAC
                 </a>
@@ -471,15 +459,19 @@ export default function Header() {
               <li className="max-lg:border-b max-lg:border-[#f0f0f0]">
                 <a
                   href="/alumni"
-                  className="text-black no-underline text-[13px] font-bold py-2.5 px-3.5 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-2.5 max-xl:text-[11px] max-xl:px-2 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm"
+                  className="text-black no-underline text-[13px] font-bold py-2.5 px-6 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-4 max-xl:text-[11px] max-xl:px-3 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm"
                 >
                   ALUMNI
                 </a>
               </li>
+            </ul>
+
+            {/* Second Row */}
+            <ul className="flex list-none justify-start flex-wrap max-lg:flex-col max-lg:mb-5">
               <li className="max-lg:border-b max-lg:border-[#f0f0f0]">
                 <a
                   href="/nirf"
-                  className="text-black no-underline text-[13px] font-bold py-2.5 px-3.5 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-2.5 max-xl:text-[11px] max-xl:px-2 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm"
+                  className="text-black no-underline text-[13px] font-bold py-2.5 px-6 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-4 max-xl:text-[11px] max-xl:px-3 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm"
                 >
                   NIRF
                 </a>
@@ -487,36 +479,30 @@ export default function Header() {
               <li className="max-lg:border-b max-lg:border-[#f0f0f0]">
                 <a
                   href="/research"
-                  className="text-black no-underline text-[13px] font-bold py-2.5 px-3.5 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-2.5 max-xl:text-[11px] max-xl:px-2 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm"
+                  className="text-black no-underline text-[13px] font-bold py-2.5 px-6 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-4 max-xl:text-[11px] max-xl:px-3 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm"
                 >
                   RESEARCH
                 </a>
               </li>
-              <li className="flex items-center gap-1 max-lg:w-full max-lg:border-b max-lg:border-[#f0f0f0]">
-                <a
-                  href="/placement"
-                  className="text-black no-underline text-[13px] font-bold py-2.5 px-3.5 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-2.5 max-xl:text-[11px] max-xl:px-2 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm"
+              <li className="flex items-center max-lg:w-full max-lg:border-b max-lg:border-[#f0f0f0]">
+                <span
+                  className="text-black no-underline text-[13px] font-bold py-2.5 px-6 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-4 max-xl:text-[11px] max-xl:px-3 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm cursor-default"
                 >
                   PLACEMENT
-                </a>
-                <span className="text-[8px] text-black pointer-events-none max-lg:ml-auto max-lg:mr-2.5">▼</span>
+                </span>
+                <span className="text-[10px] text-black pointer-events-none -ml-2 max-lg:ml-auto max-lg:mr-2.5">˅</span>
               </li>
-            </ul>
-
-            {/* Second Row */}
-            <ul className="flex list-none justify-center flex-wrap max-lg:flex-col max-lg:mb-5">
               <li
-                className="relative flex items-center gap-1 max-lg:w-full max-lg:border-b max-lg:border-[#f0f0f0]"
+                className="relative flex items-center max-lg:w-full max-lg:border-b max-lg:border-[#f0f0f0]"
                 onMouseEnter={() => setCommitteeDropdownOpen(true)}
                 onMouseLeave={() => setCommitteeDropdownOpen(false)}
               >
-                <a
-                  href="/committee"
-                  className="text-black no-underline text-[13px] font-bold py-2.5 px-3.5 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-2.5 max-xl:text-[11px] max-xl:px-2 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm"
+                <span
+                  className="text-black no-underline text-[13px] font-bold py-2.5 px-6 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-4 max-xl:text-[11px] max-xl:px-3 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm cursor-default"
                 >
                   COMMITTEE
-                </a>
-                <span className="text-[8px] text-black pointer-events-none max-lg:ml-auto max-lg:mr-2.5">▼</span>
+                </span>
+                <span className="text-[10px] text-black pointer-events-none -ml-2 max-lg:ml-auto max-lg:mr-2.5">˅</span>
 
                 {/* Committee Dropdown */}
                 {mounted && committeeDropdownOpen && (
@@ -555,17 +541,16 @@ export default function Header() {
                 )}
               </li>
               <li
-                className="relative flex items-center gap-1 max-lg:w-full max-lg:border-b max-lg:border-[#f0f0f0]"
+                className="relative flex items-center max-lg:w-full max-lg:border-b max-lg:border-[#f0f0f0]"
                 onMouseEnter={() => setOthersDropdownOpen(true)}
                 onMouseLeave={() => setOthersDropdownOpen(false)}
               >
-                <a
-                  href="/others"
-                  className="text-black no-underline text-[13px] font-bold py-2.5 px-3.5 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-2.5 max-xl:text-[11px] max-xl:px-2 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm"
+                <span
+                  className="text-black no-underline text-[13px] font-bold py-2.5 px-6 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-4 max-xl:text-[11px] max-xl:px-3 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm cursor-default"
                 >
                   OTHERS
-                </a>
-                <span className="text-[8px] text-black pointer-events-none max-lg:ml-auto max-lg:mr-2.5">▼</span>
+                </span>
+                <span className="text-[10px] text-black pointer-events-none -ml-2 max-lg:ml-auto max-lg:mr-2.5">˅</span>
 
                 {/* Others Dropdown */}
                 {mounted && othersDropdownOpen && (
@@ -584,10 +569,10 @@ export default function Header() {
                       onMouseEnter={() => setSocialWorkSubmenuOpen(true)}
                       onMouseLeave={() => setSocialWorkSubmenuOpen(false)}
                     >
-                      <a href="/others/social-work-activities" className="flex items-center justify-between px-6 py-2.5 text-[#666666] text-[15px] font-medium hover:bg-[#e8dcc8] transition-colors whitespace-nowrap">
+                      <span className="flex items-center justify-between px-6 py-2.5 text-[#666666] text-[15px] font-medium hover:bg-[#e8dcc8] transition-colors whitespace-nowrap cursor-default">
                         <span>social work activities</span>
                         <span className="text-xs">›</span>
-                      </a>
+                      </span>
                       {mounted && socialWorkSubmenuOpen && (
                         <div className="absolute left-full top-0 bg-[#f5f0e8] shadow-lg min-w-[250px] py-2 z-[9999]">
                           <a href="/others/social-work-activities/youth-red-cross" className="block px-6 py-2.5 text-[#666666] text-[15px] font-medium hover:bg-[#e8dcc8] transition-colors">
@@ -638,7 +623,7 @@ export default function Header() {
               <li className="max-lg:border-b max-lg:border-[#f0f0f0]">
                 <a
                   href="/gallery"
-                  className="text-black no-underline text-[13px] font-bold py-2.5 px-3.5 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-2.5 max-xl:text-[11px] max-xl:px-2 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm"
+                  className="text-black no-underline text-[13px] font-bold py-2.5 px-6 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-4 max-xl:text-[11px] max-xl:px-3 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm"
                 >
                   GALLERY
                 </a>
@@ -646,23 +631,22 @@ export default function Header() {
               <li className="max-lg:border-b max-lg:border-[#f0f0f0]">
                 <a
                   href="/circulars"
-                  className="text-black no-underline text-[13px] font-bold py-2.5 px-3.5 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-2.5 max-xl:text-[11px] max-xl:px-2 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm"
+                  className="text-black no-underline text-[13px] font-bold py-2.5 px-6 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-4 max-xl:text-[11px] max-xl:px-3 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm"
                 >
                   CIRCULARS AND NOTICES
                 </a>
               </li>
               <li
-                className="relative flex items-center gap-1 max-lg:w-full max-lg:border-b max-lg:border-[#f0f0f0]"
+                className="relative flex items-center max-lg:w-full max-lg:border-b max-lg:border-[#f0f0f0]"
                 onMouseEnter={() => setMandatoryDisclosuresDropdownOpen(true)}
                 onMouseLeave={() => setMandatoryDisclosuresDropdownOpen(false)}
               >
-                <a
-                  href="/disclosures"
-                  className="text-black no-underline text-[13px] font-bold py-2.5 px-3.5 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-2.5 max-xl:text-[11px] max-xl:px-2 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm"
+                <span
+                  className="text-black no-underline text-[13px] font-bold py-2.5 px-6 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-4 max-xl:text-[11px] max-xl:px-3 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm cursor-default"
                 >
                   MANDATORY DISCLOSURES
-                </a>
-                <span className="text-[8px] text-black pointer-events-none max-lg:ml-auto max-lg:mr-2.5">▼</span>
+                </span>
+                <span className="text-[10px] text-black pointer-events-none -ml-2 max-lg:ml-auto max-lg:mr-2.5">˅</span>
 
                 {/* Mandatory Disclosures Dropdown */}
                 {mounted && mandatoryDisclosuresDropdownOpen && (
@@ -685,7 +669,7 @@ export default function Header() {
               <li className="max-lg:border-b max-lg:border-[#f0f0f0]">
                 <a
                   href="/contact"
-                  className="text-black no-underline text-[13px] font-bold py-2.5 px-3.5 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-2.5 max-xl:text-[11px] max-xl:px-2 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm"
+                  className="text-black no-underline text-[13px] font-bold py-2.5 px-6 block whitespace-nowrap transition-colors duration-300 uppercase hover:text-[#1a7f5a] max-[1400px]:text-xs max-[1400px]:px-4 max-xl:text-[11px] max-xl:px-3 max-lg:py-4 max-lg:px-2.5 max-lg:text-sm"
                 >
                   CONTACT
                 </a>

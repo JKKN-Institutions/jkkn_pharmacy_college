@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import { ChevronRight } from 'lucide-react'
 import Header from '@/components/Header'
 
 // Navigation sections data
@@ -16,27 +15,6 @@ export default function AICTEPage() {
   return (
     <div className="min-h-screen bg-[#F5F1E8]">
       <Header />
-
-      {/* Breadcrumb */}
-      <div className="bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-4">
-          <nav className="flex items-center text-sm text-gray-600">
-            <Link href="/" className="hover:text-[#6B9E4E] transition-colors">
-              Home
-            </Link>
-            <ChevronRight className="w-4 h-4 mx-2" />
-            <Link href="/about" className="hover:text-[#6B9E4E] transition-colors">
-              About
-            </Link>
-            <ChevronRight className="w-4 h-4 mx-2" />
-            <Link href="/about/affiliation-details" className="hover:text-[#6B9E4E] transition-colors">
-              Affiliation Details
-            </Link>
-            <ChevronRight className="w-4 h-4 mx-2" />
-            <span className="text-gray-900 font-medium">AICTE Approval</span>
-          </nav>
-        </div>
-      </div>
 
       {/* Main Container */}
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8">

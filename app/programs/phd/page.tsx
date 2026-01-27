@@ -1,7 +1,5 @@
 'use client'
 
-import Link from 'next/link'
-import { ChevronRight } from 'lucide-react'
 import Header from '@/components/Header'
 import Image from 'next/image'
 
@@ -9,23 +7,6 @@ export default function PhDPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
-
-      {/* Breadcrumb */}
-      <div className="bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <nav className="flex items-center text-sm text-gray-600">
-            <Link href="/" className="hover:text-[#6B9E4E] transition-colors">
-              Home
-            </Link>
-            <ChevronRight className="w-4 h-4 mx-2" />
-            <Link href="/programs" className="hover:text-[#6B9E4E] transition-colors">
-              Programs
-            </Link>
-            <ChevronRight className="w-4 h-4 mx-2" />
-            <span className="text-gray-900 font-medium">Ph.D (Doctor of Philosophy) in Pharmacy</span>
-          </nav>
-        </div>
-      </div>
 
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-[#0B5D82] to-[#1A9BB8] text-white py-16 px-4 sm:px-6 lg:px-8">
