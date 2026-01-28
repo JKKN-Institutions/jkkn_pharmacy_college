@@ -1,6 +1,7 @@
 'use client'
 
 import Header from '@/components/Header'
+import Image from 'next/image'
 
 export default function ThePrincipalPage() {
   return (
@@ -12,11 +13,14 @@ export default function ThePrincipalPage() {
         <div className="max-w-6xl mx-auto px-6 lg:px-8 py-12 lg:py-16">
           {/* Principal Photo */}
           <div className="flex justify-center mb-8">
-            <div className="w-48 h-56 lg:w-56 lg:h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg">
-              {/* Placeholder for principal photo */}
-              <div className="w-full h-full flex items-center justify-center text-gray-400">
-                <p className="text-sm">[Principal Photo]</p>
-              </div>
+            <div className="w-48 h-56 lg:w-56 lg:h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg relative">
+              <Image
+                src="/images/Principal_message.jpeg"
+                alt="Dr. M. Venkatesan, Principal"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
           </div>
 

@@ -5,25 +5,30 @@ import Image from 'next/image'
 
 export default function OurInstitutionsPage() {
   return (
-    <div className="min-h-screen bg-white flex flex-col">
+    <div className="min-h-screen bg-[#F5F1E8] flex flex-col">
       <Header />
 
       {/* Main Content */}
       <main className="flex-1">
-        {/* Banner Image */}
-        <div className="w-full h-[200px] md:h-[300px] lg:h-[400px] relative">
-          <Image
-            src="/images/corridor-banner.jpg"
-            alt="JKKN Institution Corridor"
-            fill
-            className="object-cover"
-            priority
-          />
-        </div>
-
-        {/* Content Section */}
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-16">
-          <div className="space-y-6 text-gray-700 leading-relaxed">
+          {/* Page Title */}
+          <h1 className="text-4xl lg:text-5xl font-bold text-[#0F6B3E] mb-8 lg:mb-10">
+            Our Institutions
+          </h1>
+
+          {/* Institution Image */}
+          <div className="w-full h-[400px] md:h-[500px] lg:h-[600px] relative rounded-lg overflow-hidden">
+            <Image
+              src="/images/Our_Institution.webp"
+              alt="JKKN Nattraja Institutions"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+
+          {/* Content Section */}
+          <div className="mt-12 space-y-6 text-gray-700 leading-relaxed">
             <p className="text-justify">
               At JKKN Institutions, our primary goal is to foster the technical knowledge and skill development of our students, preparing them to thrive in today's competitive world. Through the implementation of effective teaching practices, we strive to establish a strong educational foundation.
             </p>
