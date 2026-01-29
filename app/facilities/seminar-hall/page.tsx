@@ -1,5 +1,4 @@
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 
 export default function SeminarHallPage() {
   return (
@@ -17,21 +16,21 @@ export default function SeminarHallPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
           <div className="w-full h-[240px] bg-gray-200 relative overflow-hidden">
             <img
-              src="/images/seminar-hall-1.jpg"
+              src="/images/seminar_hall-1.webp"
               alt="Seminar Hall 1"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="w-full h-[240px] bg-gray-200 relative overflow-hidden">
             <img
-              src="/images/seminar-hall-2.jpg"
+              src="/images/seminar_hall-2.webp"
               alt="Seminar Hall 2"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="w-full h-[240px] bg-gray-200 relative overflow-hidden">
             <img
-              src="/images/seminar-hall-3.jpg"
+              src="/images/seminar_hall-3.webp"
               alt="Seminar Hall 3"
               className="w-full h-full object-cover"
             />
@@ -68,7 +67,6 @@ export default function SeminarHallPage() {
         </div>
       </div>
 
-      <Footer />
     </div>
   )
 }

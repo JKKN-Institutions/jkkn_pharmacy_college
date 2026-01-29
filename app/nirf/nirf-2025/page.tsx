@@ -1,31 +1,68 @@
-'use client'
-
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+import Link from 'next/link'
 
 export default function NIRF2025Page() {
   return (
-    <main>
+    <div className="min-h-screen bg-[#f5f1e8]">
       <Header />
 
-      {/* NIRF-2025 Content Section */}
-      <section className="bg-[#FBFBEE] min-h-screen py-12 px-6 sm:px-10 md:px-16 lg:px-20">
-        <div className="max-w-[1400px] mx-auto">
-          {/* Page Heading */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#006837] mb-8">
-            NIRF-2025
-          </h1>
+      {/* Main Content */}
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
+        {/* Breadcrumb */}
+        <div className="mb-6 text-sm text-gray-600">
+          <Link href="/" className="hover:text-[#0F6B3E]">home</Link>
+          <span className="mx-2">›</span>
+          <span className="text-gray-900">NIRF-2025</span>
+        </div>
 
-          {/* Content */}
-          <div className="bg-white rounded-3xl p-8 shadow-lg">
-            <p className="text-gray-600 text-lg">
-              NIRF 2025 data and reports will be displayed here.
-            </p>
+        {/* Page Title */}
+        <h1 className="text-4xl lg:text-5xl font-bold text-black mb-12">
+          NIRF-2025
+        </h1>
+
+        {/* Content Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+          {/* Pharmacy Section */}
+          <div>
+            <h2 className="text-2xl lg:text-3xl font-semibold text-[#0F6B3E] mb-6">
+              Pharmacy
+            </h2>
+            <a
+              href="/pdf/NIRF-2025-Pharmacy.pdf"
+              className="inline-block px-8 py-3 bg-gray-200 text-gray-700 font-semibold rounded hover:bg-gray-300 transition-colors"
+            >
+              Download
+            </a>
+          </div>
+
+          {/* Innovation Section */}
+          <div>
+            <h2 className="text-2xl lg:text-3xl font-semibold text-[#0F6B3E] mb-6">
+              Innovation
+            </h2>
+            <a
+              href="/pdf/NIRF-2025-Innovation.pdf"
+              className="inline-block px-8 py-3 bg-gray-200 text-gray-700 font-semibold rounded hover:bg-gray-300 transition-colors"
+            >
+              Download
+            </a>
+          </div>
+
+          {/* SDG Section */}
+          <div>
+            <h2 className="text-2xl lg:text-3xl font-semibold text-[#0F6B3E] mb-6">
+              SDG
+            </h2>
+            <a
+              href="/pdf/NIRF-2025-SDG.pdf"
+              className="inline-block px-8 py-3 bg-gray-200 text-gray-700 font-semibold rounded hover:bg-gray-300 transition-colors"
+            >
+              Download
+            </a>
           </div>
         </div>
-      </section>
+      </div>
 
-      <Footer />
-    </main>
+    </div>
   )
 }

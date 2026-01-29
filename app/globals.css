@@ -8,7 +8,7 @@
   }
 
   html {
-    @apply scroll-smooth;
+    @apply scroll-smooth overflow-x-hidden;
     -webkit-tap-highlight-color: transparent;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -21,6 +21,19 @@
       sans-serif;
     min-height: 100vh;
     min-height: -webkit-fill-available;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  /* Add padding when header is fixed */
+  body[data-fixed-header="true"] {
+    padding-top: 80px;
+  }
+
+  @media (min-width: 768px) {
+    body[data-fixed-header="true"] {
+      padding-top: 100px;
+    }
   }
 
   /* Ensure images are responsive by default */
@@ -120,6 +133,11 @@
 }
 
 @layer utilities {
+  /* Fixed header compensation */
+  .has-fixed-header {
+    @apply pt-[80px] md:pt-[100px];
+  }
+
   /* Prevent horizontal scroll */
   .no-scrollbar::-webkit-scrollbar {
     display: none;

@@ -1,5 +1,4 @@
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 
 export default function ResearchPage() {
   return (
@@ -115,7 +114,7 @@ export default function ResearchPage() {
 
             {/* Button */}
             <a
-              href="#"
+              href="/pdf/Research-and-Development-Cell.pdf"
               className="inline-block px-8 py-3 bg-[#7CAF5A] text-white font-semibold rounded hover:bg-[#6B9E4E] transition-colors"
             >
               Research and Development Cell
@@ -177,7 +176,6 @@ export default function ResearchPage() {
         </div>
       </div>
 
-      <Footer />
     </div>
   )
 }

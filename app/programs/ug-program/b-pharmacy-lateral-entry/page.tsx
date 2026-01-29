@@ -33,9 +33,7 @@ export default function BPharmLateralEntryPage() {
             <span className="bg-[#FF5733] text-white px-6 py-3 rounded-full font-semibold text-sm lg:text-base">
               PCI Approved
             </span>
-            <span className="bg-[#FF5733] text-white px-6 py-3 rounded-full font-semibold text-sm lg:text-base">
-              AICTE Approved
-            </span>
+        
             <span className="bg-[#FF5733] text-white px-6 py-3 rounded-full font-semibold text-sm lg:text-base">
               NAAC Accredited
             </span>

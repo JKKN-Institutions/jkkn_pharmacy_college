@@ -1,5 +1,4 @@
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 
 export default function InternshipOpportunitiesPage() {
   return (
@@ -32,7 +31,6 @@ export default function InternshipOpportunitiesPage() {
         </div>
       </div>
 
-      <Footer />
     </div>
   )
 }

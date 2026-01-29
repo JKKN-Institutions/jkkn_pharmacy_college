@@ -1,5 +1,4 @@
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 
 export default function BankPostOfficePage() {
   return (
@@ -17,21 +16,21 @@ export default function BankPostOfficePage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <div className="w-full h-[240px] bg-gray-200 relative overflow-hidden rounded">
             <img
-              src="/images/bank-1.jpg"
+              src="/images/bank-1.webp"
               alt="Post Office"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="w-full h-[240px] bg-gray-200 relative overflow-hidden rounded">
             <img
-              src="/images/bank-2.jpg"
+              src="/images/bank-2.webp"
               alt="Indian Bank ATM"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="w-full h-[240px] bg-gray-200 relative overflow-hidden rounded">
             <img
-              src="/images/bank-3.jpg"
+              src="/images/bank-3.webp"
               alt="Indian Bank ATM Branch"
               className="w-full h-full object-cover"
             />
@@ -46,7 +45,6 @@ export default function BankPostOfficePage() {
         </div>
       </div>
 
-      <Footer />
     </div>
   )
 }

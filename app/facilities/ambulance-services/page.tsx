@@ -1,5 +1,4 @@
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 
 export default function AmbulanceServicesPage() {
   return (
@@ -19,7 +18,7 @@ export default function AmbulanceServicesPage() {
           <div className="w-full">
             <div className="w-full max-w-md bg-gray-200 relative overflow-hidden rounded">
               <img
-                src="/images/ambulance.jpg"
+                src="/images/ambulance.webp"
                 alt="Ambulance Service"
                 className="w-full h-auto object-cover"
               />
@@ -46,7 +45,6 @@ export default function AmbulanceServicesPage() {
         </div>
       </div>
 
-      <Footer />
     </div>
   )
 }

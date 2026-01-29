@@ -1,5 +1,4 @@
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 
 export default function MalpracticePreventionCommitteePage() {
   return (
@@ -220,7 +219,6 @@ export default function MalpracticePreventionCommitteePage() {
         </div>
       </div>
 
-      <Footer />
     </div>
   )
 }

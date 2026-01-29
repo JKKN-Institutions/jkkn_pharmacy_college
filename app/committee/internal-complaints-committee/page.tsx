@@ -1,5 +1,4 @@
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 import Image from 'next/image'
 
 export default function InternalComplaintsCommitteePage() {
@@ -299,7 +298,7 @@ export default function InternalComplaintsCommitteePage() {
           <div className="flex flex-col items-start mb-8">
             <div className="mb-4">
               <Image
-                src="/images/icc-qr-code.png"
+                src="/images/QR-code-for-registering-a-complaint.png"
                 alt="QR code for registering a complaint"
                 width={300}
                 height={300}
@@ -319,7 +318,7 @@ export default function InternalComplaintsCommitteePage() {
           <div className="space-y-8 mb-8">
             <div className="flex justify-center">
               <Image
-                src="/images/icc-mechanism-flowchart.png"
+                src="/images/ICC’S-REDRESSAL-MECHANISM-1.png"
                 alt="Internal Complaints Committee Mechanism"
                 width={1000}
                 height={800}
@@ -329,7 +328,7 @@ export default function InternalComplaintsCommitteePage() {
 
             <div className="flex justify-center">
               <Image
-                src="/images/steps-to-prohibit-harassment.png"
+                src="/images/ICC’S-REDRESSAL-MECHANISM-2.png"
                 alt="Steps to Prohibit Sexual Harassment"
                 width={1000}
                 height={600}
@@ -340,7 +339,6 @@ export default function InternalComplaintsCommitteePage() {
         </div>
       </div>
 
-      <Footer />
     </div>
   )
 }

@@ -394,7 +394,7 @@ export default function OrdinancesPage() {
             {/* Reference Link */}
             <div className="mt-10">
               <a
-                href="#"
+                href="/pdf/Dr.MGR-Medical-University-Examination -Ordinances.pdf"
                 className="text-[#0F6B3E] font-semibold hover:underline text-lg"
               >
                 Refer to The Tamilnadu Dr. MGR Medical University Examination  Ordinances

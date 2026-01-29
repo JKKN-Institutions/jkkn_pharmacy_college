@@ -1,7 +1,6 @@
 'use client'
 
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 
 export default function NIRFPage() {
   return (
@@ -31,7 +30,6 @@ export default function NIRFPage() {
         </div>
       </section>
 
-      <Footer />
     </main>
   )
 }

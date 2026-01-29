@@ -1,5 +1,4 @@
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 
 export default function AlumniPage() {
   return (
@@ -89,7 +88,7 @@ export default function AlumniPage() {
             </p>
 
             <a
-              href="#"
+              href="/pdf/Alumni-activities.pdf"
               className="inline-flex items-center text-[#2d5f2e] font-semibold hover:underline"
             >
               <span className="mr-2">📌</span>
@@ -192,7 +191,6 @@ export default function AlumniPage() {
         </div>
       </div>
 
-      <Footer />
     </div>
   )
 }

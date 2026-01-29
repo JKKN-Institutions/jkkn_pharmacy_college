@@ -1,5 +1,4 @@
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 
 export default function TransportPage() {
   return (
@@ -17,21 +16,21 @@ export default function TransportPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
           <div className="w-full h-[240px] bg-gray-200 relative overflow-hidden">
             <img
-              src="/images/transport-1.jpg"
+              src="/images/transport-1.webp"
               alt="Transport 1"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="w-full h-[240px] bg-gray-200 relative overflow-hidden">
             <img
-              src="/images/transport-2.jpg"
+              src="/images/transport-2.webp"
               alt="Transport 2"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="w-full h-[240px] bg-gray-200 relative overflow-hidden">
             <img
-              src="/images/transport-3.jpg"
+              src="/images/transport-3.webp"
               alt="Transport 3"
               className="w-full h-full object-cover"
             />
@@ -74,7 +73,6 @@ export default function TransportPage() {
         </div>
       </div>
 
-      <Footer />
     </div>
   )
 }

@@ -1,5 +1,4 @@
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 
 export default function InstitutionsInnovationCouncilPage() {
   return (
@@ -328,7 +327,6 @@ export default function InstitutionsInnovationCouncilPage() {
         </div>
       </div>
 
-      <Footer />
     </div>
   )
 }

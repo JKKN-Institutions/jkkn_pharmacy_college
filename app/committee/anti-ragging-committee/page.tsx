@@ -1,5 +1,4 @@
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 import Image from 'next/image'
 
 export default function AntiRaggingCommitteePage() {
@@ -353,7 +352,7 @@ export default function AntiRaggingCommitteePage() {
             <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Mechanism for Anti-ragging in JKKNCP</h2>
             <div className="flex justify-center mb-8">
               <Image
-                src="/images/anti-ragging-mechanism.png"
+                src="/images/Mechanism-for-Anti-ragging-in-JKKNCP.png"
                 alt="Mechanism for Anti-ragging in JKKNCP"
                 width={1200}
                 height={600}
@@ -505,7 +504,6 @@ export default function AntiRaggingCommitteePage() {
         </div>
       </div>
 
-      <Footer />
     </div>
   )
 }

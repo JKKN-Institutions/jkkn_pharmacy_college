@@ -72,11 +72,11 @@ export default function BPharmacyPage() {
                   • <span className="text-purple-600 font-bold">Minimum aggregate:</span> 50% marks (45% for SC/ST/OBC candidates)
                 </span>
               </li>
-              <li className="flex items-start">
+              {/* <li className="flex items-start">
                 <span className="text-gray-700 text-lg">
                   • <span className="text-purple-600 font-bold">Age limit:</span> Minimum 17 years as of December 31 of admission year
                 </span>
-              </li>
+              </li> */}
             </ul>
           </div>
 

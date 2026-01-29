@@ -153,13 +153,13 @@ export default function AdmissionProcessPage() {
             {/* Buttons */}
             <div className="mt-12 flex flex-wrap gap-6 lg:gap-12 items-center justify-center lg:justify-start">
               <a
-                href="#"
+                href="/pdf/Admission-Process-FEES-STRUCTURE.pdf"
                 className="inline-block px-8 py-4 bg-[#7CAF5A] text-white text-lg font-semibold rounded hover:bg-[#6B9E4E] transition-colors"
               >
                 Fee Structure
               </a>
               <a
-                href="#"
+                href="/pdf/Admission-Process-PROSPECTUS.pdf"
                 className="inline-block px-8 py-4 bg-[#7CAF5A] text-white text-lg font-semibold rounded hover:bg-[#6B9E4E] transition-colors"
               >
                 Prospectus

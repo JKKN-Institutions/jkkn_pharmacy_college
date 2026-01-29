@@ -1,5 +1,4 @@
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 
 export default function WifiPage() {
   return (
@@ -17,21 +16,21 @@ export default function WifiPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <div className="w-full h-[240px] bg-gray-200 relative overflow-hidden rounded">
             <img
-              src="/images/wifi-1.jpg"
+              src="/images/wifi-1.webp"
               alt="Student using laptop"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="w-full h-[240px] bg-gray-200 relative overflow-hidden rounded">
             <img
-              src="/images/wifi-2.jpg"
+              src="/images/wifi-2.webp"
               alt="Student using mobile"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="w-full h-[240px] bg-gray-200 relative overflow-hidden rounded">
             <img
-              src="/images/wifi-3.jpg"
+              src="/images/wifi-3.webp"
               alt="Students in computer lab"
               className="w-full h-full object-cover"
             />
@@ -68,7 +67,6 @@ export default function WifiPage() {
         </div>
       </div>
 
-      <Footer />
     </div>
   )
 }

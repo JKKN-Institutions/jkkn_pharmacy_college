@@ -1,5 +1,4 @@
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 
 export default function StudentGrievanceRedressalCommitteePage() {
   return (
@@ -316,7 +315,6 @@ export default function StudentGrievanceRedressalCommitteePage() {
         </div>
       </div>
 
-      <Footer />
     </div>
   )
 }

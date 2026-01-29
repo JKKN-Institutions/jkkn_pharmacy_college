@@ -1,5 +1,4 @@
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 
 export default function NationalInnovationStartupPolicyPage() {
   return (
@@ -74,7 +73,6 @@ export default function NationalInnovationStartupPolicyPage() {
         </div>
       </div>
 
-      <Footer />
     </div>
   )
 }

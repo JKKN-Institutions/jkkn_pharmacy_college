@@ -1,5 +1,4 @@
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 
 export default function SportsCommitteePage() {
   return (
@@ -115,7 +114,6 @@ export default function SportsCommitteePage() {
         </div>
       </div>
 
-      <Footer />
     </div>
   )
 }

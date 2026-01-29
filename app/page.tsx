@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-x-hidden w-full">
       <Header />
 
       {/* Hero Section */}
@@ -17,7 +17,7 @@ export default function Home() {
               {/* Badge */}
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-5 py-2 mb-6">
                 <span className="text-2xl">🏆</span>
-                <span className="text-sm font-semibold">PCI Approved | AICTE Recognized</span>
+                <span className="text-sm font-semibold">PCI Approved | NAAC Accredited</span>
               </div>
 
               {/* Main Heading */}
@@ -91,23 +91,12 @@ export default function Home() {
               </div>
               <p className="text-sm font-medium text-gray-700">PCI</p>
             </div>
-            <div className="text-center">
-              <div className="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                <span className="text-3xl">🎓</span>
-              </div>
-              <p className="text-sm font-medium text-gray-700">AICTE</p>
-            </div>
-            <div className="text-center">
-              <div className="w-20 h-20 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-3">
-                <span className="text-3xl">🏛️</span>
-              </div>
-              <p className="text-sm font-medium text-gray-700">Anna University</p>
-            </div>
+        
             <div className="text-center">
               <div className="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
                 <span className="text-3xl">📚</span>
               </div>
-              <p className="text-sm font-medium text-gray-700">TNMGRMU</p>
+              <p className="text-sm font-medium text-gray-700">Tamil Nadu Dr. M.G.R. Medical University</p>
             </div>
             <div className="text-center">
               <div className="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
@@ -153,7 +142,7 @@ export default function Home() {
               </p>
               <p className="text-gray-600 mb-8 leading-relaxed">
                 Located in Komarapalayam, Namakkal District, Tamil Nadu, our pharmacy college offers an ideal
-                environment for focused pharmaceutical learning. Approved by PCI and AICTE, we produce competent
+                environment for focused pharmaceutical learning. Approved by PCI and NAAC, we produce competent
                 pharmacists ready to serve the healthcare industry.
               </p>
 
@@ -161,7 +150,7 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                 <div className="flex items-center gap-3">
                   <span className="text-green-500 text-xl">✓</span>
-                  <span className="text-gray-700 font-medium">PCI & AICTE Approved</span>
+                  <span className="text-gray-700 font-medium">PCI & NAAC Approved</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="text-green-500 text-xl">✓</span>
@@ -177,7 +166,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="text-green-500 text-xl">✓</span>
-                  <span className="text-gray-700 font-medium">6 M.Pharm Specializations</span>
+                  <span className="text-gray-700 font-medium">5 M.Pharm Specializations</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="text-green-500 text-xl">✓</span>
@@ -212,49 +201,6 @@ export default function Home() {
 
           {/* Programs Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Diploma in Pharmacy */}
-            <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
-              <div className="bg-gradient-to-br from-[#006837] to-[#7cb983] p-6">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
-                    <span className="text-3xl">💊</span>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-white">Diploma in Pharmacy (D.Pharm)</h3>
-                    <p className="text-gray-300 text-sm">2 Years | Full-Time</p>
-                  </div>
-                </div>
-              </div>
-              <div className="p-6">
-                <p className="text-gray-600 mb-4">
-                  Foundation program for community pharmacy practice. Qualify for pharmacy license and
-                  retail pharmacy operations.
-                </p>
-                <ul className="space-y-2 mb-6">
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#7cb983] mt-1">✓</span>
-                    <span className="text-gray-700">Pharmaceutical chemistry & dispensing</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#7cb983] mt-1">✓</span>
-                    <span className="text-gray-700">Pharmacology & drug interactions</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#7cb983] mt-1">✓</span>
-                    <span className="text-gray-700">Hospital & community pharmacy training</span>
-                  </li>
-                </ul>
-                <div className="flex items-center justify-between">
-                  <div>
-                    <span className="text-3xl font-bold text-[#006837]">60</span>
-                    <span className="text-gray-600 ml-1">Seats</span>
-                  </div>
-                  <button className="text-[#7cb983] hover:text-[#6ba872] font-semibold flex items-center gap-2">
-                    Apply →
-                  </button>
-                </div>
-              </div>
-            </div>
 
             {/* Bachelor of Pharmacy */}
             <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
@@ -300,42 +246,42 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Master of Pharmacy */}
-            <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+              {/* B.Pharmacy Lateral Entry */}
+              <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
               <div className="bg-gradient-to-br from-[#006837] to-[#7cb983] p-6">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
-                    <span className="text-3xl">🔬</span>
+                    <span className="text-3xl">💊</span>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-white">Master of Pharmacy (M.Pharm)</h3>
-                    <p className="text-gray-300 text-sm">2 Years | Full-Time</p>
+                    <h3 className="text-2xl font-bold text-white">Bachelor of Pharmacy (Lateral Entry)</h3>
+                    <p className="text-gray-300 text-sm">3 Years | Full-Time</p>
                   </div>
                 </div>
               </div>
               <div className="p-6">
                 <p className="text-gray-600 mb-4">
-                  Advanced specialization programs for research, academia, and senior industry positions.
+                Comprehensive undergraduate program offering an accelerated pathway for Diploma holders into pharmaceutical sciences with direct entry into the second year.
                 </p>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-start gap-2">
                     <span className="text-[#7cb983] mt-1">✓</span>
-                    <span className="text-gray-700">6 specializations available</span>
+                    <span className="text-gray-700">Advanced entry into 2nd year for Diploma in Pharmacy graduates</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#7cb983] mt-1">✓</span>
-                    <span className="text-gray-700">Research-oriented curriculum</span>
+                    <span className="text-gray-700">Focus on pharmaceutical chemistry, formulation & clinical applications</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#7cb983] mt-1">✓</span>
-                    <span className="text-gray-700">Industry & academic career paths</span>
+                    <span className="text-gray-700">Hands-on training in labs and industry-oriented projects</span>
                   </li>
                 </ul>
                 <div className="flex items-center justify-between">
-                  <div>
-                    <span className="text-3xl font-bold text-[#006837]">18</span>
-                    <span className="text-gray-600 ml-1">Seats/Branch</span>
-                  </div>
+                  {/* <div>
+                    <span className="text-3xl font-bold text-[#006837]">60</span>
+                    <span className="text-gray-600 ml-1">Seats</span>
+                  </div> */}
                   <button className="text-[#7cb983] hover:text-[#6ba872] font-semibold flex items-center gap-2">
                     Apply →
                   </button>
@@ -343,7 +289,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Doctor of Pharmacy */}
+               {/* Doctor of Pharmacy */}
             <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
               <div className="bg-gradient-to-br from-[#006837] to-[#7cb983] p-6">
                 <div className="flex items-center gap-4 mb-4">
@@ -380,6 +326,136 @@ export default function Home() {
                     <span className="text-3xl font-bold text-[#006837]">30</span>
                     <span className="text-gray-600 ml-1">Seats</span>
                   </div>
+                  <button className="text-[#7cb983] hover:text-[#6ba872] font-semibold flex items-center gap-2">
+                    Apply →
+                  </button>
+                </div>
+              </div>
+            </div>
+
+                {/* Pharm.D (PB)*/}
+                <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+              <div className="bg-gradient-to-br from-[#006837] to-[#7cb983] p-6">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
+                    <span className="text-3xl">🔬</span>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-white">Pharm.D (Post Baccalaureate)</h3>
+                    <p className="text-gray-300 text-sm">3 Years | Full-Time</p>
+                  </div>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-gray-600 mb-4">
+                  Advanced specialization programs for research, academia, and senior industry positions.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#7cb983] mt-1">✓</span>
+                    <span className="text-gray-700">Must to complete B.Pharm</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#7cb983] mt-1">✓</span>
+                    <span className="text-gray-700">Research-oriented curriculum</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#7cb983] mt-1">✓</span>
+                    <span className="text-gray-700">Industry & academic career paths</span>
+                  </li>
+                </ul>
+                <div className="flex items-center justify-between">
+                  {/* <div>
+                    <span className="text-3xl font-bold text-[#006837]">18</span>
+                    <span className="text-gray-600 ml-1">Seats/Branch</span>
+                  </div> */}
+                  <button className="text-[#7cb983] hover:text-[#6ba872] font-semibold flex items-center gap-2">
+                    Apply →
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Master of Pharmacy */}
+            <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+              <div className="bg-gradient-to-br from-[#006837] to-[#7cb983] p-6">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
+                    <span className="text-3xl">🔬</span>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-white">Master of Pharmacy (M.Pharm)</h3>
+                    <p className="text-gray-300 text-sm">2 Years | Full-Time</p>
+                  </div>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-gray-600 mb-4">
+                  Advanced specialization programs for research, academia, and senior industry positions.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#7cb983] mt-1">✓</span>
+                    <span className="text-gray-700">5 specializations available</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#7cb983] mt-1">✓</span>
+                    <span className="text-gray-700">Research-oriented curriculum</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#7cb983] mt-1">✓</span>
+                    <span className="text-gray-700">Industry & academic career paths</span>
+                  </li>
+                </ul>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <span className="text-3xl font-bold text-[#006837]">15</span>
+                    <span className="text-gray-600 ml-1">Seats/Branch</span>
+                  </div>
+                  <button className="text-[#7cb983] hover:text-[#6ba872] font-semibold flex items-center gap-2">
+                    Apply →
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Phd*/}
+            <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+              <div className="bg-gradient-to-br from-[#006837] to-[#7cb983] p-6">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
+                    <span className="text-3xl">👨‍⚕️</span>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-white">Doctor of Philosophy (PhD)</h3>
+                    <p className="text-gray-300 text-sm">6 Years (5+1 Internship)</p>
+                  </div>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-gray-600 mb-4">
+                  Clinical pharmacy program focusing on patient care, drug therapy management, and hospital
+                  pharmacy practice.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#7cb983] mt-1">✓</span>
+                    <span className="text-gray-700">Clinical pharmacy & patient counseling</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#7cb983] mt-1">✓</span>
+                    <span className="text-gray-700">Hospital rotations & internship</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#7cb983] mt-1">✓</span>
+                    <span className="text-gray-700">Therapeutic drug monitoring</span>
+                  </li>
+                </ul>
+                <div className="flex items-center justify-between">
+                  {/* <div>
+                    <span className="text-3xl font-bold text-[#006837]">30</span>
+                    <span className="text-gray-600 ml-1">Seats</span>
+                  </div> */}
                   <button className="text-[#7cb983] hover:text-[#6ba872] font-semibold flex items-center gap-2">
                     Apply →
                   </button>
@@ -432,6 +508,32 @@ export default function Home() {
                 Drug synthesis, medicinal chemistry, computational drug design
               </p>
             </div>
+
+               {/* Pharmaceutical Practice */}
+               <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                <span className="text-3xl">⚗️</span>
+              </div>
+              <h3 className="text-2xl font-bold text-[#006837] mb-3">Pharmaceutical Practice</h3>
+              <p className="text-gray-600">
+              Clinical pharmacy, patient care, medication management, hospital & community pharmacy practice
+              </p>
+            </div>
+
+                  {/* Pharmaceutical Analysis */}
+                  <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                <span className="text-3xl">⚗️</span>
+              </div>
+              <h3 className="text-2xl font-bold text-[#006837] mb-3">Pharmaceutical Analysis</h3>
+              <p className="text-gray-600">
+              Drug testing, quality assurance, analytical techniques, validation & regulatory standards
+              </p>
+            </div>
+
+            
+
+
           </div>
         </div>
       </section>
@@ -664,7 +766,7 @@ export default function Home() {
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
                 <span className="text-3xl">⚗️</span>
               </div>
-              <h3 className="text-xl font-bold text-[#006837] mb-3">Chemistry Lab</h3>
+              <h3 className="text-xl font-bold text-[#006837] mb-3">Pharmaceutical Chemistry Lab</h3>
               <p className="text-gray-600 text-sm">
                 HPLC, UV-Vis spectrophotometer, analytical instruments
               </p>
@@ -736,16 +838,7 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Hostels */}
-            <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
-              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
-                <span className="text-3xl">🏠</span>
-              </div>
-              <h3 className="text-xl font-bold text-[#006837] mb-3">Hostels</h3>
-              <p className="text-gray-600 text-sm">
-                Separate hostels with modern amenities
-              </p>
-            </div>
+          
           </div>
         </div>
       </section>
@@ -757,7 +850,7 @@ export default function Home() {
             {/* Left Content */}
             <div>
               <p className="text-sm font-bold text-[#7cb983] uppercase tracking-wider mb-4">
-                Admissions 2025-26
+                Admissions 2026-27
               </p>
               <h2 className="text-4xl md:text-5xl font-bold text-[#006837] mb-6 leading-tight">
                 Begin Your Pharmaceutical Journey at JKKN
@@ -766,24 +859,7 @@ export default function Home() {
                 Take the first step towards a rewarding career in the pharmaceutical industry. Join J.K.K. Nattraja College of Pharmacy.
               </p>
 
-              {/* D.Pharm Eligibility */}
-              <div className="bg-white rounded-2xl p-6 mb-6">
-                <h3 className="text-xl font-bold text-[#006837] mb-4">D.Pharm Eligibility</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#7cb983] mt-1">✓</span>
-                    <span className="text-gray-700">10+2 with Physics, Chemistry & Biology/Mathematics</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#7cb983] mt-1">✓</span>
-                    <span className="text-gray-700">Minimum pass marks</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#7cb983] mt-1">✓</span>
-                    <span className="text-gray-700">Age: 17 years by December 31</span>
-                  </li>
-                </ul>
-              </div>
+  
 
               {/* B.Pharm Eligibility */}
               <div className="bg-white rounded-2xl p-6 mb-6">
@@ -799,26 +875,106 @@ export default function Home() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#7cb983] mt-1">✓</span>
-                    <span className="text-gray-700">TNEA counseling or Management quota</span>
+                    <span className="text-gray-700"> Counseling or Management quota</span>
                   </li>
                 </ul>
               </div>
 
-              {/* M.Pharm / Pharm.D Eligibility */}
+                  {/* B.Pharm Lateral Entry */}
+                  <div className="bg-white rounded-2xl p-6 mb-6">
+                <h3 className="text-xl font-bold text-[#006837] mb-4">B.Pharm (Lateral Entry) Eligibility</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#7cb983] mt-1">✓</span>
+                    <span className="text-gray-700">Diploma in Pharmacy</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#7cb983] mt-1">✓</span>
+                    <span className="text-gray-700">Minimum pass marks</span>
+                  </li>
+                  {/* <li className="flex items-start gap-2">
+                    <span className="text-[#7cb983] mt-1">✓</span>
+                    <span className="text-gray-700">Age: 17 years by December 31</span>
+                  </li> */}
+                </ul>
+              </div>
+
+              {/* M.Pharm  Eligibility */}
               <div className="bg-white rounded-2xl p-6 mb-8">
-                <h3 className="text-xl font-bold text-[#006837] mb-4">M.Pharm / Pharm.D Eligibility</h3>
+                <h3 className="text-xl font-bold text-[#006837] mb-4">M.Pharm Eligibility</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <span className="text-[#7cb983] mt-1">✓</span>
                     <span className="text-gray-700">B.Pharm from PCI-recognized institution</span>
                   </li>
-                  <li className="flex items-start gap-2">
+                  {/* <li className="flex items-start gap-2">
                     <span className="text-[#7cb983] mt-1">✓</span>
                     <span className="text-gray-700">GPAT qualified (for M.Pharm)</span>
+                  </li> */}
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#7cb983] mt-1">✓</span>
+                    <span className="text-gray-700">Minimum 50% aggregate marks</span>
+                  </li>
+                </ul>
+              </div>
+
+                 {/*  Pharm.D Eligibility */}
+                 <div className="bg-white rounded-2xl p-6 mb-8">
+                <h3 className="text-xl font-bold text-[#006837] mb-4">Pharm.D Eligibility</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#7cb983] mt-1">✓</span>
+                    <span className="text-gray-700">10+2 with Physics, Chemistry & Biology/Mathematics
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#7cb983] mt-1">✓</span>
-                    <span className="text-gray-700">Minimum 55% aggregate marks</span>
+                    <span className="text-gray-700">Minimum 50% marks (45% for reserved)
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#7cb983] mt-1">✓</span>
+                    <span className="text-gray-700"> Counseling or Management quota
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+                   {/* Phd Eligibility */}
+                   <div className="bg-white rounded-2xl p-6 mb-8">
+                <h3 className="text-xl font-bold text-[#006837] mb-4">Pharm.D (Post Baccalaureate) Eligibility</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#7cb983] mt-1">✓</span>
+                    <span className="text-gray-700">B.Pharm from PCI-recognized institution</span>
+                  </li>
+                  {/* <li className="flex items-start gap-2">
+                    <span className="text-[#7cb983] mt-1">✓</span>
+                    <span className="text-gray-700">GPAT qualified (for M.Pharm)</span>
+                  </li> */}
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#7cb983] mt-1">✓</span>
+                    <span className="text-gray-700">Minimum 50% aggregate marks</span>
+                  </li>
+                </ul>
+              </div>
+
+
+                 {/* Phd Eligibility */}
+                 <div className="bg-white rounded-2xl p-6 mb-8">
+                <h3 className="text-xl font-bold text-[#006837] mb-4">Ph.D Eligibility</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#7cb983] mt-1">✓</span>
+                    <span className="text-gray-700">M.Pharm and Pharm.D from PCI-recognized institution</span>
+                  </li>
+                  {/* <li className="flex items-start gap-2">
+                    <span className="text-[#7cb983] mt-1">✓</span>
+                    <span className="text-gray-700">GPAT qualified (for M.Pharm)</span>
+                  </li> */}
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#7cb983] mt-1">✓</span>
+                    <span className="text-gray-700">Minimum 50% aggregate marks</span>
                   </li>
                 </ul>
               </div>
@@ -923,7 +1079,7 @@ export default function Home() {
                 <span className="text-[#7cb983] text-2xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <p className="text-gray-600 mt-4 leading-relaxed">
-                J.K.K. Nattraja College of Pharmacy offers D.Pharm (2 years), B.Pharm (4 years), M.Pharm (2 years) with specializations in Pharmaceutics, Pharmacology, Pharmaceutical Chemistry, Pharmacognosy, Pharmaceutical Analysis, and Pharmacy Practice, and Pharm.D (6 years) for clinical pharmacy practice.
+                J.K.K. Nattraja College of Pharmacy offers B.Pharm (4 years), M.Pharm (2 years) with specializations in Pharmaceutics, Pharmacology, Pharmaceutical Chemistry, Pharmaceutical Analysis, and Pharmacy Practice, Pharm.D (6 years) for clinical pharmacy practice and Doctor of Philosophy (Ph.D in Pharmaceutical Sciences).
               </p>
             </details>
 
@@ -934,18 +1090,18 @@ export default function Home() {
                 <span className="text-[#7cb983] text-2xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <p className="text-gray-600 mt-4 leading-relaxed">
-                Yes, J.K.K. Nattraja College of Pharmacy is approved by the Pharmacy Council of India (PCI) and AICTE. It is affiliated with The Tamil Nadu Dr. M.G.R. Medical University for Pharm.D and Anna University for B.Pharm and M.Pharm programs.
+                Yes, J.K.K. Nattraja College of Pharmacy is approved by the Pharmacy Council of India (PCI). It is affiliated with The Tamil Nadu Dr. M.G.R. Medical University for Pharm.D, B.Pharm and M.Pharm programs.
               </p>
             </details>
 
             {/* FAQ 3 */}
             <details className="bg-[#FBFBEE] rounded-2xl p-6 shadow-md group">
               <summary className="font-bold text-[#006837] text-lg cursor-pointer flex items-center justify-between">
-                What is the admission process for B.Pharm?
+                What is the admission process for B.Pharm/Pharm.D?
                 <span className="text-[#7cb983] text-2xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <p className="text-gray-600 mt-4 leading-relaxed">
-                B.Pharm admission is based on +2 marks with Physics, Chemistry, and Biology/Mathematics. Minimum 50% marks required (45% for reserved categories). Admission through TNEA counseling or management quota. Applications can be submitted online.
+                B.Pharm/Pharm.D admission is based on +2 marks with Physics, Chemistry, and Biology/Mathematics. Minimum 50% marks required (45% for reserved categories). Admission through TNEA counseling or management quota. Applications can be submitted online.
               </p>
             </details>
 
@@ -989,7 +1145,7 @@ export default function Home() {
                 <span className="text-[#7cb983] text-2xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <p className="text-gray-600 mt-4 leading-relaxed">
-                M.Pharm specializations include Pharmaceutics (drug delivery systems), Pharmacology (drug action), Pharmaceutical Chemistry (drug synthesis), Pharmacognosy (natural products), Pharmaceutical Analysis (quality control), and Pharmacy Practice (clinical pharmacy).
+                M.Pharm specializations include Pharmaceutics, Pharmacology, Pharmaceutical Chemistry, Pharmaceutical Analysis, and Pharmacy Practice.
               </p>
             </details>
 
@@ -1014,7 +1170,7 @@ export default function Home() {
             Ready to Shape Healthcare's Future?
           </h2>
           <p className="text-xl text-white mb-10">
-            Join J.K.K. Nattraja College of Pharmacy and become part of a century-long legacy of excellence. Applications for 2025-26 are now open.
+            Join J.K.K. Nattraja College of Pharmacy and become part of a century-long legacy of excellence. Applications for 2026-27 are now open.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <button className="bg-white hover:bg-gray-100 text-[#006837] font-bold px-10 py-5 rounded-full transition-all duration-300 text-lg flex items-center gap-2">

@@ -1,5 +1,4 @@
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 
 export default function SportsPage() {
   return (
@@ -17,21 +16,21 @@ export default function SportsPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <div className="w-full h-[240px] bg-gray-200 relative overflow-hidden rounded">
             <img
-              src="/images/sports-1.jpg"
+              src="/images/sports-1.webp"
               alt="Indoor Sports Arena"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="w-full h-[240px] bg-gray-200 relative overflow-hidden rounded">
             <img
-              src="/images/sports-2.jpg"
+              src="/images/sports-2.webp"
               alt="Student Athlete"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="w-full h-[240px] bg-gray-200 relative overflow-hidden rounded">
             <img
-              src="/images/sports-3.jpg"
+              src="/images/sports-3.webp"
               alt="Sports Team"
               className="w-full h-full object-cover"
             />
@@ -172,7 +171,6 @@ export default function SportsPage() {
         </div>
       </div>
 
-      <Footer />
     </div>
   )
 }

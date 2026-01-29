@@ -1,5 +1,4 @@
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 
 export default function HealthFacilitiesPage() {
   return (
@@ -196,7 +195,6 @@ export default function HealthFacilitiesPage() {
         </div>
       </div>
 
-      <Footer />
     </div>
   )
 }

@@ -1,5 +1,4 @@
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 import { Phone, Mail } from 'lucide-react'
 
 export default function ContactPage() {
@@ -60,7 +59,6 @@ export default function ContactPage() {
         </div>
       </div>
 
-      <Footer />
     </div>
   )
 }

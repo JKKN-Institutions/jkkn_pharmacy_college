@@ -1,5 +1,4 @@
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 
 export default function YouthRedCrossPage() {
   return (
@@ -153,7 +152,6 @@ export default function YouthRedCrossPage() {
         </div>
       </div>
 
-      <Footer />
     </div>
   )
 }

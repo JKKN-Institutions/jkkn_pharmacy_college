@@ -1,5 +1,4 @@
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 import { Facebook, Share2 } from 'lucide-react'
 
 export default function CompetitiveExaminationPage() {
@@ -88,7 +87,6 @@ export default function CompetitiveExaminationPage() {
         </div>
       </div>
 
-      <Footer />
     </div>
   )
 }

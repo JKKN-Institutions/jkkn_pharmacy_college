@@ -1,5 +1,4 @@
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 
 export default function HostelPage() {
   return (
@@ -16,11 +15,11 @@ export default function HostelPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             {/* Boys Hostel Image */}
-            <div className="w-full">
+            <div className="w-full max-w-md">
               <img
-                src="/images/boys-hostel.jpg"
+                src="/images/hostel-1.webp"
                 alt="Boys Hostel"
-                className="w-full h-auto object-cover"
+                className="w-full h-auto max-h-[300px] object-cover"
               />
             </div>
 
@@ -64,11 +63,11 @@ export default function HostelPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             {/* Girls Hostel Image */}
-            <div className="w-full">
+            <div className="w-full max-w-md">
               <img
-                src="/images/girls-hostel.jpg"
+                src="/images/hostel-2.webp"
                 alt="Girls Hostel"
-                className="w-full h-auto object-cover"
+                className="w-full h-auto max-h-[300px] object-cover"
               />
             </div>
 
@@ -278,7 +277,6 @@ export default function HostelPage() {
         </div>
       </div>
 
-      <Footer />
     </div>
   )
 }

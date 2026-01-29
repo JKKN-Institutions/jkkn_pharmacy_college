@@ -1,23 +1,22 @@
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 
 export default function GalleryPage() {
   const galleryItems = [
-    { title: 'Pongal Celebration', image: '/images/gallery/pongal-celebration.jpg' },
-    { title: 'Farewell Day', image: '/images/gallery/farewell-day.jpg' },
-    { title: 'Founders Day 2022', image: '/images/gallery/founders-day-2022.jpg' },
-    { title: 'Blood Camp', image: '/images/gallery/blood-camp.jpg' },
-    { title: 'World Hemophilia Day', image: '/images/gallery/world-hemophilia-day.jpg' },
-    { title: 'World No Tobacco Day', image: '/images/gallery/world-no-tobacco-day.jpg' },
-    { title: 'World Oral Health Day', image: '/images/gallery/world-oral-health-day.jpg' },
-    { title: 'Stem Cell', image: '/images/gallery/stem-cell.jpg' },
-    { title: '35th College Day', image: '/images/gallery/35th-college-day.jpg' },
-    { title: 'ANTI RAGGING SEMINAR', image: '/images/gallery/anti-ragging-seminar.jpg' },
-    { title: '26th Graduation Day', image: '/images/gallery/26th-graduation-day.jpg' },
-    { title: 'Basic Of Cancer and Awareness', image: '/images/gallery/basic-of-cancer-awareness.jpg' },
-    { title: 'Fire and safety', image: '/images/gallery/fire-and-safety.jpg' },
-    { title: 'Prosthodontist Day', image: '/images/gallery/prosthodontist-day.jpg' },
-    { title: 'Yoga day', image: '/images/gallery/yoga-day.jpg' },
+    { title: 'Pongal Celebration', image: '/images/Pongal-Celebration-gallery.jpg' },
+    { title: 'Farewell Day', image: '/images/Farewell-Day-gallery.webp' },
+    { title: 'Founders Day 2022', image: '/images/Founders-Day-2022-gallery.jpg' },
+    { title: 'Blood Camp', image: '/images/Blood-Camp-gallery.webp' },
+    { title: 'World Hemophilia Day', image: '/images/World-Hemophilia-Day-gallery.jpg' },
+    { title: 'World No Tobacco Day', image: '/images/World-No-Tobacco-Day-gallery.webp' },
+    { title: 'World Oral Health Day', image: '/images/World-Oral-Health-Day-gallery.webp' },
+    { title: 'Stem Cell', image: '/images/Stem-cell-gallery.webp' },
+    { title: '35th College Day', image: '/images/35th-College-Day-gallery.webp' },
+    { title: 'ANTI RAGGING SEMINAR', image: '/images/ANTI-RAGGING-SEMINAR-gallery.webp' },
+    { title: '26th Graduation Day', image: '/images/26th-Graduation-Day-gallery.webp' },
+    { title: 'Basic Of Cancer and Awareness', image: '/images/Basic-Of-Cancer-and-Awareness-gallery.webp' },
+    { title: 'Fire and safety', image: '/images/Fire-and-safety-gallery.webp' },
+    { title: 'Prosthodontist Day', image: '/images/Prosthodontist-Day-gallery.webp' },
+    { title: 'Yoga day', image: '/images/Yoga-day-gallery.webp' },
   ]
 
   return (
@@ -52,7 +51,6 @@ export default function GalleryPage() {
         </div>
       </div>
 
-      <Footer />
     </div>
   )
 }

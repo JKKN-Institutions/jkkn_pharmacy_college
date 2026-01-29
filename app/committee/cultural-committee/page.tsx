@@ -1,5 +1,4 @@
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 
 export default function CulturalCommitteePage() {
   return (
@@ -142,7 +141,6 @@ export default function CulturalCommitteePage() {
         </div>
       </div>
 
-      <Footer />
     </div>
   )
 }

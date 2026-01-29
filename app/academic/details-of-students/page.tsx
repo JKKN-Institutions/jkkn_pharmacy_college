@@ -1,5 +1,4 @@
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 
 export default function DetailsOfStudentsPage() {
   return (
@@ -60,7 +59,6 @@ export default function DetailsOfStudentsPage() {
         </div>
       </div>
 
-      <Footer />
     </div>
   )
 }

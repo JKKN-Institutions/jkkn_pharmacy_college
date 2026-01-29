@@ -1,5 +1,4 @@
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 
 export default function FoodCourtPage() {
   return (
@@ -17,21 +16,21 @@ export default function FoodCourtPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <div className="w-full h-[240px] bg-gray-200 relative overflow-hidden rounded">
             <img
-              src="/images/food-court-1.jpg"
+              src="/images/food_court-1.webp"
               alt="Food Court Building"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="w-full h-[240px] bg-gray-200 relative overflow-hidden rounded">
             <img
-              src="/images/food-court-2.jpg"
+              src="/images/food_court-2.webp"
               alt="Food Court Interior"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="w-full h-[240px] bg-gray-200 relative overflow-hidden rounded">
             <img
-              src="/images/food-court-3.jpg"
+              src="/images/food_court-3.webp"
               alt="Food Court Dining Area"
               className="w-full h-full object-cover"
             />
@@ -74,7 +73,6 @@ export default function FoodCourtPage() {
         </div>
       </div>
 
-      <Footer />
     </div>
   )
 }

@@ -2,15 +2,15 @@ export default function Footer() {
   return (
     <footer className="bg-[#0a5a2a] text-white section-padding relative">
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {/* JKKN College of Pharmacy */}
           <div className="flex flex-col">
-            <h3 className="text-lg sm:text-xl font-bold mb-4 border-b-2 border-white pb-2">
+            <h3 className="text-lg sm:text-xl font-bold mb-3 border-b-2 border-white pb-2">
               JKKN COLLEGE OF PHARMACY
             </h3>
 
             {/* Google Maps Embed - Responsive */}
-            <div className="mb-4 w-full aspect-video-responsive rounded overflow-hidden">
+            <div className="mb-3 w-full aspect-video-responsive rounded overflow-hidden">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3911.0891234567890!2d77.8123456789012!3d11.3456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDIwJzQ0LjQiTiA3N8KwNDgnNDQuNCJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
                 width="100%"
@@ -32,10 +32,10 @@ export default function Footer() {
 
           {/* Our Institutions */}
           <div className="flex flex-col">
-            <h3 className="text-lg sm:text-xl font-bold mb-4 border-b-2 border-white pb-2">
+            <h3 className="text-lg sm:text-xl font-bold mb-3 border-b-2 border-white pb-2">
               OUR INSTITUTIONS
             </h3>
-            <ul className="space-y-2 text-sm sm:text-base">
+            <ul className="space-y-1.5 text-sm sm:text-base">
               <li>
                 <a
                   href="https://jkkndental.org/"
@@ -131,10 +131,10 @@ export default function Footer() {
 
           {/* Contact Us */}
           <div className="flex flex-col sm:col-span-2 lg:col-span-1">
-            <h3 className="text-lg sm:text-xl font-bold mb-4 border-b-2 border-white pb-2">
+            <h3 className="text-lg sm:text-xl font-bold mb-3 border-b-2 border-white pb-2">
               CONTACT US
             </h3>
-            <div className="space-y-3 text-sm sm:text-base mb-6">
+            <div className="space-y-2 text-sm sm:text-base mb-4">
               <p className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
                 <strong className="font-semibold">Call:</strong>
                 <a
@@ -163,10 +163,10 @@ export default function Footer() {
 
             {/* Follow Us */}
             <div className="mt-auto">
-              <h3 className="text-lg sm:text-xl font-bold mb-4 border-b-2 border-white pb-2">
+              <h3 className="text-lg sm:text-xl font-bold mb-3 border-b-2 border-white pb-2">
                 FOLLOW US
               </h3>
-              <div className="flex flex-wrap gap-3 sm:gap-4">
+              <div className="flex flex-wrap gap-2.5 sm:gap-3">
                 <a
                   href="https://www.facebook.com/jkkninstitutions"
                   target="_blank"
@@ -228,7 +228,7 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="mt-8 sm:mt-10 md:mt-12 pt-6 sm:pt-8 border-t border-white/20 text-center">
+        <div className="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-white/20 text-center">
           <p className="text-sm sm:text-base">&copy; 2025 JKKN College of Pharmacy. All rights reserved.</p>
         </div>
       </div>
